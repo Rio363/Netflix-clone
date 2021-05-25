@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --btn-red: red;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+.gray-bottom {
+  border-bottom: 8px solid rgba(54, 54, 54, 0.678);
+}
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+select {
+  background: transparent;
+  color: #fff;
+}
+select option {
+  color: #000;
+}
+.btn {
+  background: var(--btn-red);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+}
+.btn-sign-in:hover,
+.btn-get-started:hover {
+  background: rgb(224, 3, 3);
+}
+select,
+.btn-sign-in {
+  padding: 1rem 1.5rem;
+}
+.btn-sign-in {
+  margin-left: 2rem;
+}
+.logo-img {
+  width: 13rem;
+}
+
+/* Hero Styles */
+.hero {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-height: 110vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("/images/bg.jpg") no-repeat right top;
+  background-size: cover;
+  color: white;
+}
+.hero-title {
+  font-size: 4.85rem;
+  margin: 0 30%;
+  margin-bottom: 1.5rem;
+}
+.hero-subtitle {
+  margin-bottom: 2.5rem;
+}
+
+.email-label {
+  font-size: 2rem;
+  margin: 0 20%;
+  margin-bottom: 1.4rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  margin: 0 auto;
+}
+.input {
+  padding: 2rem 1rem;
+  border: none;
+  font-size: 1.7rem;
+  flex-basis: 70%;
+}
+.btn-get-started {
+  font-size: 2.5rem;
+  flex-basis: 30%;
+  padding: 1rem 2.5rem;
+}
+
+/* Showcase Styles */
+.showcase {
+  background: #000;
+  color: #fff;
+  padding: 6.5rem 10rem;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-content {
+  flex-basis: 50%;
+}
+.section-title {
+  font-size: 5rem;
+  margin-bottom: 2.4rem;
+}
+.section-subtitle {
+  font-size: 2.8rem;
+}
+.flex img {
+  width: 50%;
+  /* max-width: 40rem; */
+}
+
+/* FAQS Styles */
+.faqs {
+  background: #000;
+  color: #fff;
+  padding: 6rem 6%;
+  text-align: center;
+}
+.faqs .section-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.faqs-wrapper {
+  margin-bottom: 6rem;
+}
+.faq-box {
+  width: 100%;
+  max-width: 83rem;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #303030;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+.faq-answer {
+  background: #303030;
+  padding: 2.4rem;
+  text-align: left;
+  border-top: 3.5px solid black;
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+.closed .faq-answer {
+  display: none;
+}
+.closed .fa-times {
+  display: none;
+}
+.opened .fa-times {
+  display: block;
+}
+.opened .fa-plus {
+  display: none;
+}
+.faq-question:hover {
+  background: #363636;
+}
+.opened .faq-answer {
+  display: block;
+}
+.faq-text {
+  font-size: 2.6rem;
+  pointer-events: none;
+}
+.plus-icon {
+  pointer-events: none;
+}
+.plus-icon i {
+  font-size: 2.2rem;
+}
+
+.big-label {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 2.3rem;
+}
+
+/* Footer Styles */
+.footer {
+  background: #000;
+  color: #8f8e8e;
+  padding: 6rem 0;
+}
+.footer .container {
+  width: 70%;
+  margin: 0 auto;
+}
+.footer-heading-link {
+  font-size: 1.5rem;
+}
+
+.footer-links-wrapper {
+  margin: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-item {
+  margin-right: 1%;
+  margin-bottom: 1.8rem;
+  width: 30%;
+}
+.footer-link {
+  font-size: 1.4rem;
+  display: block;
+  width: 100%;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1280px) {
+  .hero-title {
+    margin: 0 25%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .hero-title {
+    margin: 0 20%;
+    margin-bottom: 1.5rem;
+  }
+  .form {
+    flex-flow: column;
+    align-items: center;
+  }
+  .input {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    flex-basis: 100%;
+    padding: 1.7rem 1rem;
+    font-size: 1.6rem;
+  }
+  .section-title {
+    font-size: 3.5rem;
+  }
+  .section-subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .hero-title {
+    margin: 0 15%;
+    margin-bottom: 1.5rem;
+    font-size: 4.3rem;
+  }
+  .logo-img {
+    width: 10.5rem;
+  }
+  .showcase {
+    padding: 5rem 3rem;
+  }
+  .flex {
+    flex-flow: column;
+    text-align: center;
+  }
+  .email-label {
+    font-size: 1.8rem;
+  }
+  .big-label {
+    font-size: 2rem;
+  }
+  .btn-get-started {
+    font-size: 1.7rem;
+    padding: 1rem 8.4rem;
+  }
+  .rev {
+    flex-flow: column-reverse;
+  }
+  .form {
+    width: 70%;
+  }
+  .flex img {
+    width: 80%;
+    margin-top: 3rem;
+  }
+  .faq-text {
+    font-size: 2rem;
+  }
+  .faq-answer {
+    font-size: 2rem;
+  }
+  .plus-icon i {
+    font-size: 1.8rem;
+  }
+  select,
+  .btn-sign-in {
+    padding: 0.6rem 1rem;
+    font-size: 1.3rem;
+  }
+  .faq-box {
+    max-width: 63rem;
+  }
+  .faqs .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .hero {
+    min-height: 80vh;
+  }
+  .footer-links-wrapper {
+    margin: 2rem 0;
+  }
+  .footer-item {
+    width: 45%;
+    margin-right: 1%;
+  }
+}
+@media (max-width: 640px) {
+  .hero-title {
+    margin: 0 0%;
+    margin-bottom: 1.5rem;
+    font-size: 2.6rem;
+  }
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+  .email-label {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+  .big-label {
+    font-size: 1.8rem;
+  }
+  .form {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .section-subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    height: 8rem;
+  }
+  .logo-img {
+    width: 9rem;
+  }
+  select {
+    padding: 0.8rem 1.2rem;
+  }
+  .btn {
+    padding: 0.8rem 2rem;
+  }
+
+  .faqs {
+    padding: 4rem 0rem;
+  }
+  .faq-question {
+    padding: 1.5rem 1.3rem;
+  }
+  .faq-text {
+    font-size: 1.6rem;
+  }
+  .faq-answer {
+    font-size: 1.6rem;
+    padding: 2.4rem 1.2rem;
+  }
+  .plus-icon i {
+    font-size: 1.4rem;
+  }
+  .showcase {
+    padding: 5rem 1rem;
+  }
+  select,
+  .btn-sign-in {
+    padding: 0.8rem;
+    font-size: 1.3rem;
+  }
+  .input {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .header {
+    height: 6rem;
+  }
+  .hero-title {
+    font-size: 2.3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.6rem;
+  }
+  .email-label {
+    margin: 0;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .logo-img {
+    width: 7rem;
+  }
+  .btn-sign-in,
+  select {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .flex img {
+    width: 100%;
+  }
+  .hero {
+    min-height: 90vh;
+  }
+  .section-title {
+    font-size: 2.2rem;
+  }
+  .faq-text {
+    font-size: 1.2rem;
+  }
+  .plus-icon i {
+    font-size: 1.1rem;
+  }
+  .footer .container {
+    width: 100%;
+    padding: 0 5rem;
+  }
+  .footer-heading-link {
+    font-size: 1rem;
+  }
+  .footer-link {
+    font-size: 1rem;
+  }
+}
